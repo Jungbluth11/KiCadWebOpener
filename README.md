@@ -1,4 +1,4 @@
-# KiCadWebOpener
+# KiCad WebOpener
 
 Opens KiCad project files direcly from the internet. Supports git repositories and zip-archives. Also implements the "kicad-project://" scheme
 
