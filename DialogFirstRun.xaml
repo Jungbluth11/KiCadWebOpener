@@ -1,0 +1,72 @@
+﻿<Window
+    x:Class="KiCadWebOpener.DialogFirstRun"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="KiCad Web Opener"
+    Width="416"
+    Height="268"
+    Closing="Window_Closing"
+    ResizeMode="NoResize"
+    mc:Ignorable="d">
+    <Canvas>
+        <Label
+            Name="LbLocaleStringKicadPath"
+            Canvas.Left="10"
+            Canvas.Top="10"
+            Content="Enter KiCad Installation Path" />
+        <Label
+            Name="LbLocaleStringDefaultSavePath"
+            Canvas.Left="10"
+            Canvas.Top="73"
+            Content="Enter Default Save Path" />
+        <Label
+            Name="LbLocaleStringSelectLanguage"
+            Canvas.Left="10"
+            Canvas.Top="138"
+            Content="Select Language" />
+        <TextBox
+            Name="TBoxKicadPath"
+            Canvas.Left="10"
+            Canvas.Top="41"
+            Width="260"
+            TextChanged="TBoxKicadPath_TextChanged" />
+        <TextBox
+            Name="TBoxDefaultSavePath"
+            Canvas.Left="10"
+            Canvas.Top="104"
+            Width="260"
+            TextChanged="TBoxDefaultSavePath_TextChanged" />
+        <ComboBox
+            Name="DropdownLanguage"
+            Canvas.Left="10"
+            Canvas.Top="164"
+            Width="159">
+            <ComboBoxItem Content="en-US" />
+            <ComboBoxItem Content="de-DE" />
+        </ComboBox>
+        <Button
+            x:Name="BtnLocaleStringFileSelectorKicadPath"
+            Canvas.Left="303"
+            Canvas.Top="40"
+            Width="90"
+            Click="BtnLocaleStringFileSelectorKicadPath_Click"
+            Content="Select File" />
+        <Button
+            x:Name="BtnLocaleStringDirectorySelectorDefaultSavePath"
+            Canvas.Left="303"
+            Canvas.Top="102"
+            Width="90"
+            Click="BtnLocaleStringDirectorySelectorDefaultSavePath_Click"
+            Content="Select Directory" />
+        <Button
+            x:Name="BtnLocaleStringSave"
+            Canvas.Left="330"
+            Canvas.Top="202"
+            Width="60"
+            Click="BtnLocaleStringSave_Click"
+            Content="Save"
+            IsEnabled="False" />
+    </Canvas>
+</Window>
